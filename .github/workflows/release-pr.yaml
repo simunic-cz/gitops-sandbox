@@ -22,37 +22,37 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create Pull Request
-        uses: actions/github-script@v9
-        with:
-          script: |
-            const description = `
-            ### Changelog
-            `;
-
-            github.rest.pulls.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                head: "master",
-                base: "release",
-                title: "Release",
-                body: description,
-            });
-
       # - name: Create Pull Request
-      #   uses: peter-evans/create-pull-request@v8
-      #   id: create-pr
+      #   uses: actions/github-script@v9
       #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      #     # commit-message: 'Update minor and patch dependencies for all Rush.js projects'
-      #     # committer: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
-      #     # author: Release bot
-      #     base: release
-      #     branch: master
-      #     delete-branch: false
-      #     # branch-suffix: timestamp
-      #     title: Release
-      #     body: |
+      #     script: |
+      #       const description = `
       #       ### Changelog
+      #       `;
 
-      #       - Foo
+      #       github.rest.pulls.create({
+      #           owner: context.repo.owner,
+      #           repo: context.repo.repo,
+      #           head: "master",
+      #           base: "release",
+      #           title: "Release",
+      #           body: description,
+      #       });
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v8
+        id: create-pr
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # commit-message: 'Update minor and patch dependencies for all Rush.js projects'
+          # committer: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
+          # author: Release bot
+          base: release
+          branch: next
+          delete-branch: false
+          # branch-suffix: timestamp
+          title: Release
+          body: |
+            ### Changelog
+
+            - Foo
