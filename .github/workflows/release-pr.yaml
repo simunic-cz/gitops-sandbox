@@ -6,13 +6,15 @@ on:
       - master
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 jobs:
   update-release-pr:
     name: Update release PR
     runs-on: ubuntu-latest
+    # permissions:
+    #   contents: write
+    #   pull-requests: write
 
     steps:
       - name: Checkout Repo
