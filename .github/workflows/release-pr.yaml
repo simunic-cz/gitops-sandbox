@@ -24,6 +24,8 @@ jobs:
 
       - name: Create Pull Request
         uses: actions/github-script@v9
+        env:
+          APP_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           script: |
             const description = `
