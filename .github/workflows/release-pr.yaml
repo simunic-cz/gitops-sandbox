@@ -6,15 +6,13 @@ on:
       - master
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 
 jobs:
   update-release-pr:
     name: Update release PR
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
 
     steps:
       - name: Checkout Repo
@@ -24,8 +22,6 @@ jobs:
 
       - name: Create Pull Request
         uses: actions/github-script@v9
-        env:
-          APP_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           script: |
             const description = `
