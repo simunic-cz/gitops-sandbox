@@ -1,6 +1,6 @@
 
-Some sort of feature. Lorem
-ipsum dolor sit amet. Ale chleba
+Some sort of fix. Lorem
+ipsum dolor sit amet. Ale houska
 na louce tančí bíle kolem mraku.
 if (obchod) {
     Console.WriteLine("nope...");
