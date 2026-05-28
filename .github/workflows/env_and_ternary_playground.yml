@@ -10,7 +10,7 @@ permissions:
 
 env:
   FOO: 'Lorem ipsum.'
-  BAR: '${{ vars.FOO }}'
+  BAR: '${{ env.FOO }}'
 
 jobs:
   playground:
@@ -23,5 +23,5 @@ jobs:
     steps:
       - name: Print vars
         run: |
-          echo "FOO=${{ vars.FOO }}"
-          echo "BAR=${{ vars.BAR }}"
+          echo "FOO=${{ env.FOO }}"
+          echo "BAR=${{ env.BAR }}"
