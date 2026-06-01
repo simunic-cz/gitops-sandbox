@@ -8,3 +8,4 @@ if (samoobsluha) {
 }
 
 Baz.
+Add new feature.
