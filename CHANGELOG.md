@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/simunic-cz/gitops-sandbox/compare/v1.1.0...v1.2.0) (2026-06-01)
+
+
+### Features
+
+* custom release PR title ([f9a65fd](https://github.com/simunic-cz/gitops-sandbox/commit/f9a65fd157e08bc94cf0fdb9bbb4d122b9240e86))
+
+
+### Bug Fixes
+
+* trigger release ([17bb7ad](https://github.com/simunic-cz/gitops-sandbox/commit/17bb7ad20357fea90f645101b31f997384947e65))
+
 ## [1.1.0](https://github.com/simunic-cz/gitops-sandbox/compare/v1.0.0...v1.1.0) (2026-06-01)
 
 
