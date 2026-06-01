@@ -9,3 +9,4 @@ if (samoobsluha) {
 
 Baz.
 Add new feature.
+Add another feature.
