@@ -6,3 +6,5 @@ tančí bíle kolem mraku.
 if (samoobsluha) {
     console.log("nope...");
 }
+
+Baz.
