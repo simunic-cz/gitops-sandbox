@@ -1,0 +1,11 @@
+#################################################################################
+#                            Global configuration                               #
+#################################################################################
+
+global:
+  gaia:
+    version: latest # this specifies an image tag that will be used for all components
+    environment: local
+  tracing:
+    # Default targets the local chart-cluster-setup Jaeger, remote overlays point to Alloy
+    otlpEndpoint: http://cluster-setup-jaeger.cluster-resources:4317
