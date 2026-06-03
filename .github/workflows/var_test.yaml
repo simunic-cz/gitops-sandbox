@@ -1,0 +1,19 @@
+name: Vars test
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo "${{ vars.UNDEFINED_VAR }}"
+          echo "${{ vars.UNDEFINED_VAR == 'true' }}"
+          echo "${{ vars.UNDEFINED_VAR == 'default value' }}"
