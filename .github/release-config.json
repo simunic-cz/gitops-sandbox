@@ -6,6 +6,10 @@
     "include-v-in-release-name": true,
     "always-update": true,
     "packages": {
-        ".": {}
+        ".": {
+            "extra-files": [
+                { "type": "yaml", "path": "chart/values.yaml", "jsonpath": "$.global.gaia.version" }
+            ]
+        }
     }
 }
