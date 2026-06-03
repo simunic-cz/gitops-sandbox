@@ -9,11 +9,11 @@ permissions:
   contents: read
 
 jobs:
-  release-please:
+  test-vars:
     runs-on: ubuntu-latest
 
     steps:
       - run: |
           echo "${{ vars.UNDEFINED_VAR }}"
           echo "${{ vars.UNDEFINED_VAR == 'true' }}"
-          echo "${{ vars.UNDEFINED_VAR == 'default value' }}"
+          echo "${{ vars.UNDEFINED_VAR || 'default value' }}"
