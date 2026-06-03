@@ -13,5 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: ${{ vars.UNDEFINED_VAR == 'ticketOnly' && './actions/action_A' || './actions/action_B' }}
       - run: |
           echo "${{ (vars.UNDEFINED_VAR == 'ticketOnly' || vars.UNDEFINED_VAR == '') && 'Ticket only' || 'Conventional commit' }}"

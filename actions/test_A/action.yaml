@@ -1,0 +1,6 @@
+name: Test Action A
+description: Test Action A
+
+runs:
+  using: node24
+  main: main.js
