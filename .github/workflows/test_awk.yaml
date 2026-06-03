@@ -1,0 +1,17 @@
+name: AWS test
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  test-vars:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          awk --version
