@@ -4,7 +4,7 @@
 
 global:
   gaia:
-    version: latest # this specifies an image tag that will be used for all components
+    version: latest # x-release-please-version
     environment: local
   tracing:
     # Default targets the local chart-cluster-setup Jaeger, remote overlays point to Alloy
