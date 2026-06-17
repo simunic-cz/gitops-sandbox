@@ -4,7 +4,7 @@
 
 global:
   gaia:
-    version: v0.0.0 # x-release-please-version
+    version: v1.3.0 # x-release-please-version
     environment: local
   tracing:
     # Default targets the local chart-cluster-setup Jaeger, remote overlays point to Alloy

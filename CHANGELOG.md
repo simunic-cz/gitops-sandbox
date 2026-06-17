@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.3.0](https://github.com/simunic-cz/gitops-sandbox/compare/v1.2.0...v1.3.0) (2026-06-17)
+
+
+### Features
+
+* new feature num. 1 ([a7283a3](https://github.com/simunic-cz/gitops-sandbox/commit/a7283a308839c9f53423b5789acfc1a8c667ac8d))
+* new feature num. 2 ([7b72565](https://github.com/simunic-cz/gitops-sandbox/commit/7b72565165c783b3f2ed85f5f6025041af94af60))
+* update version in values file ([43cbf89](https://github.com/simunic-cz/gitops-sandbox/commit/43cbf89517fef9355c4782e9106005913b673ff1))
+
+
+### Bug Fixes
+
+* add `x-release-please-version` annotation ([f4aa40c](https://github.com/simunic-cz/gitops-sandbox/commit/f4aa40cf9a1bf0ce8715e85b7eedb7df1c34fa40))
+* init empty version ([d176f55](https://github.com/simunic-cz/gitops-sandbox/commit/d176f55e7e0a5e7773d0f96fdd9ada62795133a9))
+* test ([d661a1d](https://github.com/simunic-cz/gitops-sandbox/commit/d661a1d3b44c18a3e66d526ebde8d2c7c5015962))
+* try generic extra file type ([e39d858](https://github.com/simunic-cz/gitops-sandbox/commit/e39d85802c6bc6f85c7c8e009a5718d50778b2fe))
+* use `v` prefix ([d8af4fe](https://github.com/simunic-cz/gitops-sandbox/commit/d8af4fe0ea82dc124b9209325655768ea1dbac65))
+* use generic updater ([874c7d8](https://github.com/simunic-cz/gitops-sandbox/commit/874c7d84da60e40fd6093f332f83cd2e5c400194))
+* use yaml updater ([6e9147c](https://github.com/simunic-cz/gitops-sandbox/commit/6e9147cc849bdb621eb5dbae4966f1a4ccbcbd00))
+
 ## [1.2.0](https://github.com/simunic-cz/gitops-sandbox/compare/v1.1.0...v1.2.0) (2026-06-01)
 
 
