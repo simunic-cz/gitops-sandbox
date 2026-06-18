@@ -8,7 +8,7 @@
     "packages": {
         ".": {
             "extra-files": [
-                { "type": "generic", "path": "chart/values.yaml", "jsonpath": "$.global.gaia.version" }
+                { "type": "generic", "path": "chart/values.yaml" }
             ]
         }
     }
