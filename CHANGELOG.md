@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/simunic-cz/gitops-sandbox/compare/v1.3.0...v1.3.1) (2026-06-18)
+
+
+### Bug Fixes
+
+* remove redundant config ([e9bd151](https://github.com/simunic-cz/gitops-sandbox/commit/e9bd1512bb5fa8ebfb289f2acfae695e5a454097))
+
 ## [1.3.0](https://github.com/simunic-cz/gitops-sandbox/compare/v1.2.0...v1.3.0) (2026-06-17)
 
 
